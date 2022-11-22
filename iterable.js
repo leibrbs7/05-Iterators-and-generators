@@ -18,9 +18,10 @@ function createIteratable(start = 0, end = number, step = 1) {
             } return { value, done: true }
           },
         }
-      },
+        },
     }
 }
 
-const iterable = createIteratable()
-console.log(...iterable)
+const iterable2 = createIteratable()
+
+console.log([...iterable2])
