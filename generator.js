@@ -1,6 +1,6 @@
 const number = process.argv[2]
 
-function createGenerator(start = 0, end = number, step = 1) {
+function createGenerator(end = number) {
     let start = 0
     let value = start
     let n2 = 1
