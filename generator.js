@@ -3,8 +3,8 @@ function createGenerator(end) {
   let n2 = 1
 
   return function* generatorFunction() {
-    let result; let
-      nextTerm
+    let result
+    let nextTerm
     if (value < end) {
       for (let i = 1; i <= end; i += 1) {
         result = { value, done: false }
