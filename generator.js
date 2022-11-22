@@ -20,3 +20,11 @@ const generatorFunction = createGenerator(10)
 const generatorObject = generatorFunction()
 
 console.log([...generatorObject])
+
+const generatorFunction1 = createGenerator(10)
+const generatorObject1 = generatorFunction1()
+
+for (let i = 0; i < 6; i++) {
+    console.log(generatorObject1.next())
+    console.log(generatorObject1.next())
+}
