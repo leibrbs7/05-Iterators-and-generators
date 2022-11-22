@@ -1,6 +1,4 @@
-const number = process.argv[2]
-
-function createIteratable(end = number) {
+function createIteratable(end) {
     let start = 0
     let value = start
     let n2 = 1
@@ -10,13 +8,11 @@ function createIteratable(end = number) {
           next() {
             let result, nextTerm
             if (value < end) {
-              for (let i = 1; i <= end; i++){ 
                 result = { value, done: false }
                 nextTerm = value + n2
                 value = n2
                 n2 = nextTerm
                 return result
-              }
             } return { value, done: true }
           },
         }
@@ -24,6 +20,6 @@ function createIteratable(end = number) {
     }
 }
 
-const iterable2 = createIteratable()
+const iterable2 = createIteratable(10)
 
 console.log([...iterable2])
