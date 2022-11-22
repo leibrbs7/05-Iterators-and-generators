@@ -1,7 +1,7 @@
 function createIteratable(end) {
-    let start = 0
-    let value = start
-    let n2 = 1
+  let start = 0
+  let value = start
+  let n2 = 1
     return {
       [Symbol.iterator]: function () {
         return {
@@ -16,7 +16,7 @@ function createIteratable(end) {
             } return { value, done: true }
           },
         }
-        },
+      },
     }
 }
 
