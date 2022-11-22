@@ -1,6 +1,5 @@
 function createIteratable(end) {
-  let start = 0
-  let value = start
+  let value = 0
   let n2 = 1
     return {
       [Symbol.iterator]: function () {
